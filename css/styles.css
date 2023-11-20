@@ -1,0 +1,40 @@
+
+ .sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  margin-top: 52px;
+}
+
+
+
+/* Adjust main content to the right of the sidebar */
+.content {
+  margin-left: 200px;
+  padding: 15px;
+  transition: margin-left 0.5s;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .sidebar {
+      width: 0;
+  }
+
+  .content {
+      margin-left: 0;
+  }
+}
+/*Login */
+body {
+  background-color: #f8f9fa;
+}
+.login-container {
+  margin-top: 5%;
+}
