@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
         <div class="btn-group-vertical p-2">
             <a href="./admin.html"><button type="button" class="btn btn-block">Home</button></a>
             <a href="./product.html"><button type="button" class="btn active btn-block ">Product</button></a>
-            <a href="./contact.html"><button type="button" class="btn  btn-block ">Contact</button></a>>
+            <a href="./contact.html"><button type="button" class="btn  btn-block ">Contact</button></a>
           </div>
     </div>
     <!-- Main content -->
@@ -52,48 +52,135 @@
      
             <div class="content">
                 <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-4">
-                      <label for="productId" class="form-label">Product ID</label>
-                      <input type="text" class="form-control" id="productId" value="0000" disabled>
+                    <div class="col-md-1">
+                      <label for="productId" class="form-label" title="Product ID will be generated automatically">Product ID</label>
+                      <input type="text" title="Product ID will be generated automatically" class="form-control" id="productId" value="0000" readonly>
                     </div>
                     <div class="col-md-4">
                       <label for="productName" class="form-label">Product Name</label>
                       <input type="text" class="form-control" id="productName" value="Product Name" required>
                     </div>
-                    <div class="col-md-4">
-                      <label for="brand" class="form-label">Brand</label>
-                      <div class="input-group has-validation">
-                        <input type="text" class="form-control" id="brand" aria-describedby="inputGroupPrepend" required>
-                    
-                      </div>
-                    </div>
-                    <div class="col-md-6">
+                    <div class="col-md-7">
                       <label for="productDescription" class="form-label">Product Description</label>
                       <input type="text" class="form-control" id="productDescription" >
                       
                     </div>
-                    <div class="col-md-3">
-                      <label for="validationCustom04" class="form-label">Catagory</label>
-                      <select class="form-select" id="validationCustom04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
-                      </select>
-                      <div class="invalid-feedback">
-                        Please select a valid state.
+                    <div class="col-md-2">
+                      <label for="brand" class="form-label">Unit</label>
+                      <div class="input-group has-validation">
+                        <select name="form-select" id="">
+                            <option value="">Box</option>
+                            <option value="">Pcs</option>
+                        </select>
+                        <div><button class="btn btn-outline-primary">+</button></div>
                       </div>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="brand" class="form-label">Brand</label>
+                      <div class="input-group has-validation">
+                        <select name="form-select" id="">
+                            <option value="">Apple</option>
+                            <option value="">Sony</option>
+                        </select>
+                        <button class="btn btn-outline-primary">+</button>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-2">
+                      <label for="brand" class="form-label">Catagory</label>
+                      <div class="input-group has-validation">
+                        <select name="form-select" id="">
+                            <option value="">Monitor</option>
+                            <option value="">Mobile</option>
+                        </select>
+                        <button class="btn btn-outline-primary">+</button>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="productName" class="form-label">Alert quantity</label>
+                      <input type="number" class="form-control" id="Alert quantity" value="Alert quantity" required>
                     </div>
                     <div class="col-md-3">
                       <label for="validationCustom05" class="form-label">Product Image</label>
-                      <input type="text" class="form-control" id="validationCustom05" required>
-                      <div class="invalid-feedback">
-                        Please provide a valid zip.
-                      </div>
+                      <input type="file" class="form-control" id="validationCustom05" required>
                     </div>
-                    <div class="col-12">
-                      <button class="btn btn-primary" type="submit">Add Product</button>
+                    <div class="col-8">
+                      
+                    </div>
+                    <div class="col-4">
+                      <button class="btn btn-outline-primary" type="submit">Save</button>
+                      <button class="btn btn-outline-primary" type="submit">Save And Add Another</button>
                     </div>
                   </form>
         </div>
+        <div class="content">
+          <table class="table table-hover">
+              <thead>
+                <tr class="table">
+                  <th scope="col">Product ID</th>
+                  <th scope="col">Product Name</th>
+                  <th scope="col">Product Description</th>
+                  <th scope="col">Unit</th>
+                  <th scope="col">Brand</th>
+                  <th scope="col">Catagory</th>
+                  <th scope="col">Alert quantity</th>
+                  <th scope="col">Product Image</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Iphone 13 Pro</td>
+                  <td>128GB Black</td>
+                  <td>Pcs</td>
+                  <td>Apple</td>
+                  <td>Mobile</td>
+                  <td>3</td>
+                  <td><img src="./img/iphone.png" alt="Iphone 13 Pro"></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Iphone 13 Pro</td>
+                  <td>256GB Black</td>
+                  <td>Pcs</td>
+                  <td>Apple</td>
+                  <td>Mobile</td>
+                  <td>1</td>
+                  <td><img src="./img/iphone.png" alt="Iphone 13 Pro"></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Iphone 13 Pro</td>
+                  <td>512GB Black</td>
+                  <td>Pcs</td>
+                  <td>Apple</td>
+                  <td>Mobile</td>
+                  <td>5</td>
+                  <td><img src="./img/iphone.png" alt="Iphone 13 Pro"></td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Iphone 13 Pro</td>
+                  <td>1TB Black</td>
+                  <td>Pcs</td>
+                  <td>Apple</td>
+                  <td>Mobile</td>
+                  <td>1</td>
+                  <td><img src="./img/iphone.png" alt="Iphone 13 Pro"></td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Iphone 13 Pro</td>
+                  <td>128GB White</td>
+                  <td>Pcs</td>
+                  <td>Apple</td>
+                  <td>Mobile</td>
+                  <td>3</td>
+                  <td><img src="./img/iphone.png" alt="Iphone 13 Pro"></td>
+                </tr>
+              </tbody>
+            </table>
+  </div>
     <script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html>
