@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OTP Verification</title>
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="login-box">
-            <h1>OTP Verification</h1>
-            <form id="otp-form">
-                <label for="otp">Enter OTP:</label>
-                <input type="text" id="otp" name="otp" placeholder="Enter OTP" required>
-                <button type="submit">Verify OTP</button>
-            </form>
+    <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 container">
+        <div class="card bg-light d-flex">
+            <div class="card-body bg-light text-center form-control">
+                <div>
+                    <h1>OTP Verification</h1>
+                        <label for="otp"></label>
+                        <input type="text" id="otp" name="otp" placeholder="Enter OTP" required>
+                        <button type="submit" class="btn btn-primary p-2 m-2">Verify OTP</button>
+                </div>
+
+            </div>
+
         </div>
+        
     </div>
+
+
     <script src="./js/verify-otp.js"></script>
+    
 </body>
 </html>

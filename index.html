@@ -8,17 +8,21 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="login-box">
-            <h2 class="p-2">Login</h2>
+    <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 container">
+        <div class="card">
+            <div class="card-body bg-light">
+                <h2 class="p-2 text-center">Login</h2>
             <form id="phone-form">
                 <label for="phone"></label>
                 <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
                 <small class="p-2"><span>Agree to the <a class="text-decoration-none" href="#"> Terms and Conditions</a></span>
                 </small>
-                <button class="btn btn-primary btn-block" type="button" id="get-otp">Get OTP</button>
+                <button class="btn btn-primary btn-block" type="button" id="get-otp">Submit</button>
             </form>
+
+            </div>
         </div>
+
     </div>
     <script src="./js/js.js"></script>
 </body>
